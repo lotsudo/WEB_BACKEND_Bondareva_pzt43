@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторные работы по PHP | Дарья</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-bottom: 3px solid #00afec;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .labs-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .labs-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .lab-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #eee;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .lab-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            border-color: #00afec;
+        }
+
+        .lab-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        .lab-card p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            text-align: center;
+            background: #111111;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            transition: background 0.2s ease;
+        }
+
+        .btn-link:hover {
+            background: #00afec;
+        }
+
+        .active-site {
+            background: #00afec;
+        }
+        .active-site:hover {
+            background: #111111;
+        }
+
+        footer {
+            background: #111111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Портфолио лабораторных работ по PHP</h1>
+</header>
+
+<div class="container">
+    <div class="labs-grid">
+
+        <div class="lab-card">
+            <div>
+                <h3>Лабораторная работа №1</h3>
+            </div>
+            <a href="лабораторные/лр1/index.php" target="_blank" class="btn-link">Открыть работу</a>
+        </div>
+
+        <div class="lab-card">
+            <div>
+                <h3>Лабораторная работа №2</h3>
+            </div>
+            <a href="лабораторные/лр2/index.php" target="_blank" class="btn-link">Открыть работу</a>
+        </div>
+
+        <div class="lab-card">
+            <div>
+                <h3>Лабораторная работа №3</h3>
+  
+            </div>
+            <a href="лабораторные/лр3/lb3.php" target="_blank" class="btn-link">Открыть работу</a>
+        </div>
+
+        <div class="lab-card">
+            <div>
+                <h3>Лабораторная работа №4</h3>
+            </div>
+            <a href="лабораторные/лр4/login.php" target="_blank" class="btn-link">Открыть работу</a>
+        </div>
+
+        <div class="lab-card">
+            <div>
+                <h3>Лабораторная работа №5</h3>
+            </div>
+            <a href="лабораторные/лр5/index.php" target="_blank" class="btn-link">Открыть работу</a>
+        </div>
+
+        <div class="lab-card">
+            <div>
+                <h3>Лабораторная работа №6</h3>
+            </div>
+            <a href="лабораторные/лр6/lb6_panel.php" target="_blank" class="btn-link">Открыть работу</a>
+        </div>
+
+        <div class="lab-card" style="grid-column: 1 / -1; border-left: 5px solid #00afec;">
+            <div>
+                <h3>Лабораторная работа №7-9 (Финальный проект)</h3>
+            </div>
+            <a href="лабораторные/лр7-9/index.php" target="_blank" class="btn-link active-site">Открыть весь сайт Dwello</a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Разработано в учебных целях. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
